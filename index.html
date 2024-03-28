@@ -84,13 +84,26 @@
 
     iframe {
       /* Adjust width and height as needed, keeping margin:auto for centering */
-      width: 560px; /* Example width */
-      height: 315px; /* Example height */
+      width: 100%; /* Take full width */
     }
 
     /* Smaller font size for the subtitle */
     .subtitle {
       font-size: 0.8em; /* Adjust the font size as needed */
+    }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .profile-img {
+        width: 100px; /* Decrease image size for smaller screens */
+        height: 100px;
+      }
     }
   </style>
 </head>
@@ -127,7 +140,7 @@
       <p>Project 2: Korek Company Visit</p>
       <!-- Embedding YouTube video for Project 2 -->
       <iframe width="560" height="315" src="https://www.youtube.com/embed/HhOeckc0XAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Project 3: Ms Tara's Report:</p>
+      <p>Project 3: Miss Tara's Report:</p>
       <!-- Button to open PDF link -->
       <a href="https://files.fm/u/mvwvjnqsg3" target="_blank" style="background-color: #7f00c4; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin: 4px 2px; cursor: pointer; border-radius: 12px;">Click here for PDF</a>
 <p>Project 4: Korek's Report:</p>
